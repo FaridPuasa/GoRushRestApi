@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "start": "set Node_ENV=development&& node server.js",
+    "start-prod": "set Node_ENV=production&& node server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,8 @@
   "devDependencies": {
     "dotenv": "^14.3.0",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "14.17.6"
   }
 }
