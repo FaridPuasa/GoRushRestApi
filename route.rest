@@ -1,0 +1,20 @@
+POST http://localhost:5000/resolution
+Content-Type: application/json
+
+{
+   "agent": "Dylan Chua",
+   "phone": "6737178007" 
+}
+
+#####
+
+DELETE http://localhost:5000/test/61ef6275a8c509d08582340b
+
+######
+
+PATCH  http://localhost:5000/test/61ef65e7434cd13d91f62bdc
+Content-Type: application/json
+
+{
+    "name": "Dylan Chua"
+}
