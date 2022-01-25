@@ -14,5 +14,8 @@ app.use(express.json())
 const resolutionRouter = require('./routes/resolution')
 app.use('/resolution', resolutionRouter)
 
+app.get('/ping', (req,res)=>{
+    console.log("live")
+})
 
 app.listen(5000, ()=> console.log('server started'));
